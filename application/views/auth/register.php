@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Login Form</title>
+    <title>Animated Registration Form</title>
     <link rel="stylesheet" href="style.css"> <!-- Menghubungkan style.css -->
 </head>
+
 <style>
 /* style.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;400&display=swap');
@@ -29,7 +30,7 @@ body {
 .box {
     position: relative;
     width: 380px;
-    height: 420px;
+    height: 520px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -42,7 +43,7 @@ body {
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 520px;
     background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
     z-index: 1;
     transform-origin: bottom right;
@@ -68,7 +69,7 @@ body {
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 520px;
     background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
     z-index: 1;
     transform-origin: bottom right;
@@ -114,7 +115,8 @@ body {
 .box form .inputBox {
     position: relative;
     width: 300px;
-    margin-top: 35px;
+    margin-top: 20px;
+    /* Ubah margin-top ke 20px untuk ruang yang lebih baik */
 }
 
 .box form .inputBox input {
@@ -211,7 +213,12 @@ body {
     <div class="box">
         <div class="borderLine"></div>
         <form>
-            <h2>Sign in</h2>
+            <h2>Register</h2>
+            <div class="inputBox">
+                <input type="text" required>
+                <span>Username</span>
+                <i></i>
+            </div>
             <div class="inputBox">
                 <input type="text" required>
                 <span>Email</span>
@@ -224,9 +231,9 @@ body {
             </div>
             <div class="links">
                 <a href="#">Forgot Password</a>
-                <a href="register">Signup</a>
+                <a href="index">Sign In</a>
             </div>
-            <input type="submit" value="Login">
+            <input type="submit" value="Register">
         </form>
     </div>
 </body>
